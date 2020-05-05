@@ -1,4 +1,3 @@
-*
-!kalkulus_a2ce01.pdf
-!kalkulus_a2ce01.tex
-!.gitignore
+*.aux
+*.log
+*.dvi
