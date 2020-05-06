@@ -6,6 +6,7 @@
 \usepackage{cancel}
 \usepackage{color}
 \usepackage{xcolor}
+\usepackage{graphicx}
 \usepackage[margin=0.2in]{geometry}
 \usepackage[utf8]{inputenc}
 \thispagestyle{empty}
@@ -93,10 +94,83 @@
 \end{aligned}}
 \end{align*}
 
-% No.1
+% No.2
 \begin{align*}
 \boxed{\begin{aligned}
   & \textbf{No. 2. } \text{ Mencari asimtot tegak pada fungsi } \\
+  & \textbf{a. } f(x) = \frac{x^2 - x - 2}{x + 1} \\
+  & \frac{x^2 - x - 2}{x + 1}
+    = \frac{(x + 1)(x - 2)}{x + 1}
+    = \frac{\cancel{(x + 1)}(x - 2)}{\cancel{x + 1}}
+    = x - 2 \\
+  & \therefore f(x) \text{ tidak memiliki asimtot tegak} \\ ~ \\
+  & \textbf{b. } f(x) = \frac{x^2 - x - 2}{x + 2} \\
+  & \frac{x^2 - x - 2}{x + 2} = x+\frac{-3x-2}{x+2} = x-3+\frac{4}{x+2} \\
+  & \therefore \text{Terdapat asimtot tegak } x=-2
+  \\ & \textbf{by Ammar Faizi}
+\end{aligned}}
+\end{align*}
+
+% No.3
+\begin{align*}
+\boxed{\begin{aligned}
+  & \textbf{No. 3. } \text{ Mencari asimtot datar pada fungsi } \\
+  & \textbf{a. } f(x) = \frac{1}{x^2} - 1 \\
+  & \therefore \text{Terdapat asimtot datar } y=-1 \\ ~ \\
+  & \textbf{b. } f(x) = \frac{1}{x - 1} \\
+  & \therefore \text{Terdapat asimtot datar } y=0
+  \\ & \textbf{by Ammar Faizi}
+\end{aligned}}
+\end{align*}
+
+% No.4
+\begin{align*}
+\boxed{\begin{aligned}
+  & \textbf{No. 4. } \text{ Menggambarkan fungsi } \\
+  & f(x)=x^{3}-12x^{2}+36x+10 \\
+  & \includegraphics[scale=0.5]{graph_f.png}
+\end{aligned}}
+\end{align*}
+
+% No.5
+\begin{align*}
+\boxed{\begin{aligned}
+  & \textbf{No. 5. } \text{ Hitung limit } \\
+  & \textbf{a. } \lim_{x \to -1} \frac{x^2 + 5x + 4}{x^2 - 4x -5}
+    = \frac{(-1)^2 + 5(-1) + 4}{(-1)^2 - 4(-1) -5}
+    = \frac{1 - 5 + 4}{1 + 4 -5}
+    = \frac{0}{0} \text{ (bertemu dengan indeterminate form)} \\
+  & \lim_{x \to -1} \frac{x^2 + 5x + 4}{x^2 - 4x -5}
+    = \lim_{x \to -1} \frac{(x + 4)(x + 1)}{(x - 5)(x + 1)}
+    = \lim_{x \to -1} \frac{(x + 4)\cancel{(x + 1)}}{(x - 5)\cancel{(x + 1)}}
+    = \lim_{x \to -1} \frac{x + 4}{x - 5}
+    = -\frac{3}{6} = -\frac{1}{2} \\ ~ \\ ~ \\
+  & \textbf{b. } \lim_{x \to 1} \frac{\ln(x)}{x^2 - 1}
+    = \frac{\ln(1)}{1^2 - 1}
+    = \frac{0}{0} \text{ (bertemu dengan indeterminate form)} \\
+  & \text{Menggunakan aturan L'Hopital} \\
+  & \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)} \\
+  & \text{sehingga } \lim_{x \to 1} \frac{\ln(x)}{x^2 - 1}
+    = \lim_{x \to 1} \frac{\frac{d}{dx} \ln(x)}{\frac{d}{dx}\left(x^2 - 1\right)}
+    = \lim_{x \to 1} \frac{\frac{1}{x}}{2x}
+    = \lim_{x \to 1} \frac{1}{2x^2}
+    = \frac{1}{2} \\ ~ \\ ~ \\
+  & \textbf{c. } \lim_{x \to \infty} \frac{x}{\ln(x)}
+    = \frac{\infty}{\ln(\infty)}
+    = \frac{\infty}{\infty} \text{ (bertemu dengan indeterminate form)} \\
+  & \text{Menggunakan aturan L'Hopital} \\
+  & \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)} \\
+  & \text{sehingga } \lim_{x \to \infty} \frac{x}{\ln(x)}
+    = \lim_{x \to \infty} \frac{\frac{d}{dx}x}{\frac{d}{dx}\ln(x)}
+    = \lim_{x \to \infty} \frac{1}{\frac{1}{x}}
+    = \lim_{x \to \infty} x
+    = \infty  \\ ~ \\ ~ \\
+  & \textbf{d. } \lim_{x \to \infty} \frac{2x^2 + 5x + 4}{x^2 + 4x - 5}
+    = \frac{\infty}{\infty} \text{ (bertemu dengan indeterminate form)} \\
+  & \lim_{x \to \infty} \frac{2x^2 + 5x + 4}{x^2 + 4x - 5} \\
+  &  = \lim_{x\to \infty}\frac{2+\frac{5}{x}+\frac{4}{x^2}}{1+\frac{4}{x}-\frac{5}{x^2}} \text{ (dibagi pangkat terbesar)} \\
+  &  = \frac{2}{1} = 2
+  \\ & \textbf{by Ammar Faizi}
 \end{aligned}}
 \end{align*}
 
